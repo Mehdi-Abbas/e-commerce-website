@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tumbler</title>
+
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    </style>
+    
+
+  </head>
+  <body>
+    
+    <header>
+      <div class="topBar">
+        <h3>FREE SHIPPING ON ALL ORDERS</h3>
+      </div>
+      <div class="navBar">
+      	<div class="container">
+      		<div class="col-md-3"><div class="logo"><a href="index.html"><img class="img-responsive" src="images/logo.png"></a></div></div>
+      		<div class="col-md-6">
+      			<div class="navLink">
+	      			<ul>
+	      				<li><a href="index.html">HOME</a></li>
+	      				<li><a href="about-us.html">ABOUT US </a></li>
+	      				<li><a href="shop.html">SHOP</a></li>
+	      				<li><a href="contact-us.html">CONTACT US</a></li>
+	      				<li><a href="faq.html">FAQ</a></li>
+	      			</ul>
+	      		</div>
+      		</div>
+      		<div class="col-md-3">
+      			<div class="navIcon">
+	      			<ul>
+	      				<li><a href=""><img src="images/nav_icon_1.png"></a></li>
+	      				<li><a href=""><img src="images/nav_icon_2.png"></a></li>
+	      				<li><a href="my-cart.html"><img src="images/nav_icon_3.png"></a></li>
+	      			</ul>
+	      		</div>
+      		</div>
+      	</div>
+        
+        
+      </div>
+    </header>
+    <div class="title">
+      <h1>Checkout</h1>
+    </div>
+    <section class="checkout1">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="shipingAddress">
+                  <h2>Shipping Address</h2>
+                  <p>Login or register for faster payment.</p>
+                  <form>
+                    <label id="fnamel">First Name:</label>
+                    <label id="lnamel">Last Name:</label><br>
+                    <input id="fname" type="text">
+                    <input id="lname" type="text"><br>
+                    <label for="country">Country:</label><br>
+                    <select id="country" name="country">
+                      <option value="country1">US (United States)</option>
+                      <option value="country2">Pakistan</option>
+                      <option value="country3">England</option>
+                      <option value="country3">Canada</option>
+                    </select><br>
+                    <label id="state">State:</label>
+                    <label id="zipcode">Zip/postal code:</label><br>
+                    <select id="state" name="state">
+                      <option value="state1">Texas</option>
+                      <option value="state2">Utah</option>
+                      <option value="state3">NewYork</option>
+                      <option value="state4">Pensylvania</option>
+                    </select>
+                    <input id="zipcode" type="text"><br>
+
+                    <label id="addressl">Address 1:</label><br>
+                    <input id="address" type="text"><br>
+                    
+                    <input type="checkbox"  id="tickbox">
+                    <p id="ticktext">Save address to my account</p>
+                      
+                    
+
+                    
+                  </form>
+                </div>
+                <div class="deliveryMethods">
+                  <h2>Delivery Methods</h2>
+                  <form>
+                    <input type="radio" id="standard" name="devMethods" value="standard">
+                    <label for="standard">Standard Delivery $2.99 (3-5 days)</label><br>
+                    <input type="radio" id="express" name="devMethods" value="express">
+                    <label for="express">Express Delivery $10.00 (1-2 days)</label><br>
+                    <input type="radio" id="sameday" name="devMethods" value="sameday">
+                    <label for="sameday">Same-Day $20.00 (Evening Delivery)</label>
+                  </form>
+                </div>
+                <div class="billingAddress">
+                  <h2>Billing Address</h2>
+                 
+                  <form>
+                    
+                    <label for="country">Country:</label><br>
+                    <select id="country" name="country">
+                      <option value="country1">US (United States)</option>
+                      <option value="country2">Pakistan</option>
+                      <option value="country3">England</option>
+                      <option value="country3">Canada</option>
+                    </select><br>
+                    <label id="state">State:</label>
+                    <label id="zipcode">Zip/postal code:</label><br>
+                    <select id="state" name="state">
+                      <option value="state1">Texas</option>
+                      <option value="state2">Utah</option>
+                      <option value="state3">NewYork</option>
+                      <option value="state4">Pensylvania</option>
+                    </select>
+                    <input id="zipcode" type="text"><br>
+
+                    <label id="addressl">Address 1:</label><br>
+                    <input id="address" type="text"><br>
+                    
+                  </form>
+                </div>
+                <div class="paymentmethods">
+                  <h2>Payments Methods</h2>
+                  <form>
+                    <input type="radio" id="credit" name="payMethods" value="credit">
+                    <label for="credit">Credit Card</label><br>
+                    <input type="radio" id="paypal" name="payMethods" value="paypal">
+                    <label for="paypal">Paypal</label><br>
+                    <label id="cardl">Card Number</label><br>
+                    <input id="card" type="text"><br>
+                    <label id="month">Month:</label>
+                    <label id="year">Year:</label><br>
+                    <select id="months" name="month">
+                      <option value="month1">January</option>
+                      <option value="month2">Febuary</option>
+                      <option value="month3">March</option>
+                      <option value="month4">April</option>
+                      <option value="month5">May</option>
+                      <option value="month6">June</option>
+                      <option value="month7">July</option>
+                      <option value="month8">August</option>
+                      <option value="month9">September</option>
+                      <option value="month10">October</option>
+                      <option value="month11">November</option>
+                      <option value="month12">December</option>
+
+                    </select>
+                    <select id="years" name="year">
+                      <option value="year1">2025</option>
+                      <option value="year2">2026</option>
+                      <option value="year3">2027</option>
+                      <option value="year4">2028</option>
+                    </select><br>
+                    <label id="cvvl">CVV Code</label><br>
+                    <input id="cvv" type="text">
+                    
+                  </form>
+                </div>
+                <div class="orderComments">
+                  <h2>Order Comment</h2>
+                  <textarea type="text" rows='5' col='5' name="comment"></textarea>
+                </div>
+                <div class="productTable">
+                  <table >
+                    <tr>
+                      <th>Product</th>
+                      <th>Price</th>
+                      <th id="qty">Qty</th>
+                      <th id="sub">Subtotal</th>
+                    </tr>
+                    
+                    <tr class="mid-row">
+                      <td><img src="images/img_013.png" align="left"><p>Black Cherry 6-Pack<br>(Six Bottles - 16 Fl Oz. Each)</p></td>
+                      <td><h5>$22.75</h5></td>
+                      <td>
+                        <div class="input-group inline-group">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary btn-minus">
+                              <i class="fa fa-minus"></i>
+                            </button>
+                          </div>
+                          <input class="form-control quantity" min="0" name="quantity" value="1" type="number">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary btn-plus">
+                              <i class="fa fa-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="last-col"><h5>$22.75</h5></td>
+                    </tr>
+                    
+                    <tr class="mid-row">
+                      <td><img src="images/img_013.png" align="left"><p>Black Cherry 6-Pack<br>(Six Bottles - 16 Fl Oz. Each)</p></td>
+                      <td><h5>$22.75</p></h5>
+                      <td>
+                        <div class="input-group inline-group">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary btn-minus">
+                              <i class="fa fa-minus"></i>
+                            </button>
+                          </div>
+                          <input class="form-control quantity" min="0" name="quantity" value="1" type="number">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary btn-plus">
+                              <i class="fa fa-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td  class="last-col"><h5>$22.75</p></h5>
+                    </tr>
+                  </table>
+                </div>
+                <div class="applyPromocode"></div>
+                <div class="subTotal"></div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <footer>
+      <div class="bottomBar1">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="socialLink"> 
+              <ul>
+                <li><a href="" class="link_icon"><i class="fa fa-facebook" aria-hidden="true"></i>FACEBOOK</a></li>
+                <li><a href="" class="link_icon"><i class="fa fa-twitter" aria-hidden="true"></i>TWITTER</a></li>
+                <li><a href="" class="link_icon"><i class="fa fa-google-plus" aria-hidden="true"></i>GOOGLE +</a></li>
+                <li><a href="" class="link_icon"><i class="fa fa-linkedin" aria-hidden="true"></i>LINKEDIN</a></li>
+                <li><a href="" class="link_icon"><i class="fa fa-instagram" aria-hidden="true"></i>INSTAGRAM</a></li>
+                <li><a href="" class="link_icon"><i class="fa fa-vimeo" aria-hidden="true"></i>VIMEO</a></li>
+                <li><a href="" class="link_icon"><i class="fa fa-youtube" aria-hidden="true"></i>YOUTUBE</a></li>
+              </ul>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="bottomBar2">
+        <div class="container">
+          <div class="col-md-3">
+            <div class="quickLink">
+              <h5>Qiuck Links</h5> 
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="help"> 
+              <h5>Help</h5> 
+              <ul>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ's</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="usefull"> 
+              <h5>Usefull</h5> 
+              <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Refubd Policy</a></li>
+                <li><a href="">Terms of Service</a></li>
+              </ul>
+            </div> 
+          </div>
+          <div class="col-md-3">
+            <div class="joinMail"> 
+              <h5>Join our mailing list</h5> 
+              <ul>
+                <li>Sign up to receive our latest news, blog posts and product launches!</li>
+                <li><form><input type="text" name="email" placeholder="Enter you Email"></form></li>
+                <li id='submitBottun'><form><input type="submit" name="submit"></form></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
